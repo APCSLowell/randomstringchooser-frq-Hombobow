@@ -13,14 +13,9 @@ public class RandomStringChooser
     }
   }
   public String getNext() {
-    if (wordList.size() == 0) {
-      return "NONE";
+    if (wordList.size() > 0) {
+      return words.remove((int) (Math.random() * words.size()));
     }
-    else {
-      int index = (int) (Math.random * wordList.size());
-      String temp = wordList.get(index);
-      wordList.remove(index);
-      return temp;
-    }
+    return "NONE";
   }
 }

@@ -5,17 +5,15 @@ public class RandomStringChooser
   
   //Heads up! 
   //You will get a very confusing error message until you have working code in part b as well
-  private String[] words;
   private ArrayList<String> wordList;
   public RandomStringChooser(String[] word) {
-    words = word;
     wordList = new ArrayList<String>();
-    for (String word: words) {
-      wordList.add(word);
+    for (String singleWord: word) {
+      wordList.add(singleWord);
     }
   }
   public String getNext() {
-    if (words.length == 0) {
+    if (wordList.size() == 0) {
       return "NONE";
     }
     else {

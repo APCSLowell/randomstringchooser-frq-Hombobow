@@ -16,10 +16,5 @@ public class RandomLetterChooser extends RandomStringChooser
 			letterArray[i] = ""+str.charAt(i);
 		}
 		return letterArray;
-		// wordArray = getSingleLetters(str);
-		// wordList = new ArrayList<String>();
-		// for (String word: words) {
-		// 	wordList.add(word);
-		// }
 	}
 }

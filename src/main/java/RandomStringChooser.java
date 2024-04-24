@@ -14,7 +14,7 @@ public class RandomStringChooser
   }
   public String getNext() {
     if (wordList.size() > 0) {
-      return wordList.remove((int) (Math.random() * words.size()));
+      return wordList.remove((int) (Math.random() * wordList.size()));
     }
     return "NONE";
   }

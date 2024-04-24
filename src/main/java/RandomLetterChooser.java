@@ -10,16 +10,16 @@ public class RandomLetterChooser extends RandomStringChooser
 	
 	public static String[] getSingleLetters(String str)
 	{ 
-		// String[] letterArray = new String[str.length()];
-		// for(int i=0; i<str.length(); i++)
-		// {
-		// 	letterArray[i] = ""+str.charAt(i);
-		// }
-		// return letterArray;
-		wordArray = getSingleLetters(str);
-		wordList = new ArrayList<String>();
-		for (String word: words) {
-			wordList.add(word);
+		String[] letterArray = new String[str.length()];
+		for(int i=0; i<str.length(); i++)
+		{
+			letterArray[i] = ""+str.charAt(i);
 		}
+		return letterArray;
+		// wordArray = getSingleLetters(str);
+		// wordList = new ArrayList<String>();
+		// for (String word: words) {
+		// 	wordList.add(word);
+		// }
 	}
 }
